@@ -1,4 +1,4 @@
-# 0x02. C - Functions, Nested Loops
+# x02. C - Functions, Nested Loops
 
 ## Questions
 
