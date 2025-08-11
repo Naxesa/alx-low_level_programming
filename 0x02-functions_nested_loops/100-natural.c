@@ -1,36 +1,27 @@
+/*
+ * File: 101-natural.c
+ * Auth: DS
+ */
+
 #include <stdio.h>
 
 /**
- * sum_of_multiples - Computes the sum of all natural numbers below `limit`
- *                    that are multiples of 3 or 5.
- * @limit: The upper bound (excluded).
+ * main - Lists all the natural numbers below 1024 (excluded)
+ *        that are multiples of 3 or 5.
  *
- * Return: The computed sum.
- */
-int sum_of_multiples(int limit)
-{
-	int i, sum = 0;
-
-	for (i = 1; i < limit; i++)
-	{
-		if (i % 3 == 0 || i % 5 == 0)
-			sum += i;
-	}
-
-	return (sum);
-}
-
-/**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * Return: Always 0.
  */
 int main(void)
 {
-	int result;
+	int i, sum = 0;
 
-	result = sum_of_multiples(1024);
-	printf("%d\n", result);
+	for (i = 0; i < 1024; i++)
+	{
+		if ((i % 3) == 0 || (i % 5) == 0)
+			sum += i;
+	}
+
+	printf("%d\n", sum);
 
 	return (0);
 }
