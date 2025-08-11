@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - check code
+ * main - entry point to test print to 98
  *
  * Return: always 0
  */
