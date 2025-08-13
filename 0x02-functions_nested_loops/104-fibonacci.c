@@ -14,7 +14,7 @@ int main(void)
 
 	for (count = 1; count <= 98; count++)
 	{
-		if (a_high)
+		if (a_high > 0)
 		{
 			printf("%lu%010lu", a_high, a);
 		}
@@ -33,7 +33,7 @@ int main(void)
 
 		if (sum < a)
 		{
-			sum_high += 1;
+			sum_high++;
 		}
 
 		a = b;
